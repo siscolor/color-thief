@@ -16,7 +16,7 @@
  * getAverageRGB()
  * createAreaBasedPalette()
  *
- * Requires jquery and quantize.js.
+ * Requires quantize.js.
  */
 
 
@@ -58,7 +58,7 @@ CanvasImage.prototype.getImageData = function () {
 };
 
 CanvasImage.prototype.removeCanvas = function () {
-    $(this.canvas).remove();
+    this.canvas.parentNode.removeChild(this.canvas);
 };
 
 
